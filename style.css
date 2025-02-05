@@ -29,7 +29,6 @@ h2 {
   margin: 0;
 }
 
-/* Ensure images are responsive */
 picture img {
   display: block;
   width: 100%;
@@ -37,7 +36,6 @@ picture img {
   object-fit: cover;
 }
 
-/* Layout Change for Large Viewports */
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
