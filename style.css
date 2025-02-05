@@ -2,7 +2,7 @@
 
 html, body {
   margin: 0;
-  border: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -23,26 +23,27 @@ h1 {
   margin: 0;
 }
 
-h4 {
-  font-size: 1.5rem;
+h2 {
+  font-size: 1.8rem;
   font-weight: 300;
+  margin: 0;
 }
 
-img {
+/* Ensure images are responsive */
+picture img {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
-/* Viewport = 960px or Larger */
+/* Layout Change for Large Viewports */
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* Square-image = Half the Viewport Width */
-  .header img {
-    width: 50vw;
-    height: auto;
+  
+  picture img {
+    object-fit: contain;
   }
 }
