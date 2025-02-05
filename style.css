@@ -2,13 +2,12 @@
 
 html, body {
   margin: 0;
-  padding: 0;
+  border: 0;
   font-family: 'Roboto', sans-serif;
 }
 
 .header {
   display: grid;
-  grid-template-columns: 1fr;
   align-items: center;
   background-color: cadetblue;
 }
@@ -24,24 +23,17 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  margin: 0;
 }
 
-picture img {
+img {
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: cover;
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
-  }
-  
-  picture img {
-    object-fit: contain;
   }
 }
